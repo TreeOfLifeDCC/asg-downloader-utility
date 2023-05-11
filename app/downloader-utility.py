@@ -36,7 +36,6 @@ def downloader(download_list, processes):
         pool.apply_async(download_filea, args=(url, filename, directory, download_location))
     pool.close()
     pool.join()
-    print("Download complete")
 
 
 def main(species_list, taxonomy_filter, data_status, experiment_type, download_option, download_location, processes):
